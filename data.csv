@@ -1,0 +1,8 @@
+,lat,lon,nomCapteur,etat,moyenne
+0,45.535726,-73.661380,Capteur1,True,2:30
+1,45.535873,-73.661560,Capteur2,False,1:50
+2,45.535706,-73.661112,Capteur4,False,0:10
+3,45.535605,-73.661437,Capteur4,True,5:30
+3,45.534505,-73.661437,Capteur5,True,5:30
+3,45.534605,-73.661437,Capteur9,True,5:30
+3,45.534605,-73.662437,Capteur10,True,5:30
