@@ -24,7 +24,7 @@ class PointParking:
         self.etat = etat
         self.moyenne = moyenne
 
-COLOR_REG_GOOD_V = '#ADFF2F' # vert
+COLOR_REG_GOOD_V = '#03fc3d' # vert
 COLOR_REG_GOOD = '#00FFFF' # bleu ciel
 COLOR_REG_LIMIT = '#FFBF00' # yellow
 COLOR_REG_BAD = '#FF0000' #red
@@ -50,7 +50,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 
 # Fetch the service account key JSON file contents
-cred = credentials.Certificate(r'C:\Users\lac90\Downloads\hackaton-32051-firebase-adminsdk-9h2n3-60136d7449.json')
+cred = credentials.Certificate(r'/Users/omidadibi/Downloads/hackaton-32051-firebase-adminsdk-9h2n3-881783b644.json')
 
 # Initialize the app with a service account, granting admin privileges
 firebase_admin.initialize_app(cred, {
@@ -67,9 +67,9 @@ firebase_admin.initialize_app(cred, {
 
 def defineColor(bool):
     if bool:
-        return COLOR_PHASE_A
-    else:
         return COLOR_REG_BAD
+    else:
+        return COLOR_REG_GOOD_V
 
 def createParkingPoint(pointP):
 
@@ -165,10 +165,10 @@ app.layout = html.Div([
                     className="four columns div-user-controls",
                     children=[
                         html.Img(
-                            className="logo", src="https://scontent.fymq3-1.fna.fbcdn.net/v/t1.15752-9/82801080_190692008721283_799274576059039744_n.png?_nc_cat=108&_nc_ohc=Pe_nLy9HCtMAX_57PDL&_nc_ht=scontent.fymq3-1.fna&oh=5add8902103ba2e8d21bbc64003593c3&oe=5EA5573C"
+                            className="logo", src="https://firebasestorage.googleapis.com/v0/b/hackaton-32051.appspot.com/o/Screen%20Shot%202020-06-29%20at%204.26.16%20PM.png?alt=media&token=8129e681-f3e1-460f-8af9-72a745b22102"
                         ),
-                        html.H1(children = 'Visualisation du traffic du Parking'),
-                        html.P(children = 'Voici un exemple de ce que notre application web pour entreprise resemblerait')
+                        html.H1(children = 'Parking traffic visualization'),
+                        html.P(children = 'Here is an example of what our business web app would look like')
                     ],
                 ),
                 # Column for app graphs and plots
