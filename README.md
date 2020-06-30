@@ -1,5 +1,5 @@
 # carspace
-
+![Dasboard](https://firebasestorage.googleapis.com/v0/b/hackaton-32051.appspot.com/o/Screen%20Shot%202020-06-29%20at%204.25.11%20PM.png?alt=media&token=8f5f940a-ff6e-4a38-81c2-8df056d78526)
 
 ## Inspiration
 Finding a parking lot can be hard, time consumming and not really green
@@ -9,23 +9,30 @@ Finding a parking lot can be hard, time consumming and not really green
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install carspace.
 
 ```bash
-pip install comming soon 
+cd PlateformApp
+pip install
 ```
 ## Demo
 
 ![Dasboard](https://firebasestorage.googleapis.com/v0/b/hackaton-32051.appspot.com/o/Screen%20Shot%202020-06-30%20at%2010.13.36%20AM.png?alt=media&token=f0751431-5b51-4456-9f97-d4c7df9c648d)
 
-## Usage
+## Create Test Data
 
 ```bash
 python test.py
+```
+
+## Start Plateform
+
+```bash
+python App.py
 ```
 
 ## What it does
 It detect if there is a car at a parking slot and then share the data via a DB
 
 ## How I built it
-Python, raspberry pi
+Python, raspberry pi , LINKIT
 
 ## What's next for CarPace
 AI for treatmeant of the data, more option and analysis of the data
